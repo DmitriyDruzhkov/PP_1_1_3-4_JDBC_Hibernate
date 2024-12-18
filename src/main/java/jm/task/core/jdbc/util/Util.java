@@ -5,10 +5,6 @@ import java.sql.*;
 public class Util {
     private static Connection connection;
 
-    public Util(Connection connection) {
-        this.connection = connection;
-    }
-
     public static Connection getConnection() {
         try {
             Connection connection = DriverManager.getConnection(
